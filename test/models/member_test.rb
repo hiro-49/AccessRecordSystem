@@ -28,7 +28,7 @@ class MemberTest < ActiveSupport::TestCase
     assert_not @member.valid?
   end
   
-  test "name should not correct value" do
+  test "name should be correct value" do
     @member.name = "A" * 21
     assert_not @member.valid?
   end
