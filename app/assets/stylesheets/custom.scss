@@ -54,9 +54,31 @@ h2 {
   color: $gray-light;
 }
 
-p {
+p{
   font-size: 1.1em;
   line-height: 1.7em;
+}
+
+
+
+/* members */
+.members {
+  // text-align: center;
+  
+  table {
+    // display: inline-block;
+  }
+
+  th, td {
+    padding: 10px;
+    font-size: 1.1em;
+    line-height: 1.7em;
+  }
+  
+  .link-add {
+    // display: inline-block;
+    margin: 10px;
+  }
 }
 
 
@@ -144,7 +166,3 @@ input {
   }
 }
 
-/* link */
-.link {
-  float: right;
-}
