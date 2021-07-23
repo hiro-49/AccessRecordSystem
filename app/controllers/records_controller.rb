@@ -10,9 +10,9 @@ class RecordsController < ApplicationController
     if(@member = Member.find_by(idm: idm))
       @record = Record.new(name: @member.name, number: @member.number, temperature: temperature)
       @record.save
-      render text: @member.name
+      render plain: @member.name
     else
-      render text: 'Unregistered member'
+      render plain: 'Unregistered member'
     end
     
   end
