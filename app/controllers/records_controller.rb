@@ -10,7 +10,7 @@ class RecordsController < ApplicationController
       @record.save
       render text: @member.name
     else
-      render text: 'Unregistered member', status: 422
+      render text: 'Unregistered member'
     end
     
   end
