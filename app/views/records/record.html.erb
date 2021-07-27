@@ -1,2 +1,25 @@
-<h1>Records#record</h1>
-<p>Find me in app/views/records/record.html.erb</p>
+<% provide(:title, "Records") %>
+<h1>Records</h1>
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <div class="records">
+            <h3>入室記録</h3>
+            <table border="1">
+                <tr>
+                    <th>学籍番号</th>
+                    <th>名前</th>
+                    <th>体温</th>
+                    <th>入室日時</th>
+                </tr>
+                <% @records.each do |record| %>
+                    <tr>
+                        <td><%= record.number %></td>
+                        <td><%= record.name %></td>
+                        <td><%= record.temperature %></td>
+                        <td><%= record.created_at %></td>
+                    </tr>
+                <% end %>
+            </table>
+        </div>
+    </div>
+</div>
