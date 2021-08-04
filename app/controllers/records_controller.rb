@@ -13,7 +13,7 @@ class RecordsController < ApplicationController
       @record.save
       render plain: @member.name
     else
-      render plain: 'Unregistered member'
+      render plain: 'Unknown member'
     end
     
   end
